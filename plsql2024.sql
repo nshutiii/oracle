@@ -121,14 +121,12 @@ WHERE OrderID = 102;
 -- checking if row was inserted and deleted
 select * from suppliers;
 
-
-
 select * from productsuppliers;
 
 
 
 
-
+insert into customers values ('3','Noella','Mutesi','noella@gmaiil.com','078654321');
 
 
 
