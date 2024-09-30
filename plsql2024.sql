@@ -66,6 +66,8 @@ INSERT INTO Customers (CustomerID, FirstName, LastName, Email, Phone) VALUES
 INSERT INTO Customers (CustomerID, FirstName, LastName, Email, Phone) VALUES 
 (2, 'fabrice', 'mucyo', 'mutabazi@gmail.com', '0783123333');
 
+insert into customers values ('3','ange','Mutesi','noella@gmaiil.com','078654321');
+
 -- inserting into Orders table
 INSERT INTO Orders (OrderID, OrderDate, CustomerID, TotalAmount) VALUES 
 (101, TO_DATE('2024-09-20', 'YYYY-MM-DD'), 1, 250.75);
@@ -124,7 +126,7 @@ select * from suppliers;
 select * from productsuppliers;
 
 
-insert into customers values ('3','ange','Mutesi','noella@gmaiil.com','078654321');
+
 
 
 
