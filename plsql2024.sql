@@ -124,9 +124,7 @@ select * from suppliers;
 select * from productsuppliers;
 
 
-
-
-insert into customers values ('3','Noella','Mutesi','noella@gmaiil.com','078654321');
+insert into customers values ('3','ange','Mutesi','noella@gmaiil.com','078654321');
 
 
 
