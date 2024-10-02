@@ -20,7 +20,7 @@ ProductSuppliers Table: Manages the many-to-many relationship between products a
 
 
 Example SQL for Creating the Customers Table:
-
+```sql
 CREATE TABLE Customers (
     CustomerID NUMBER PRIMARY KEY,
     FirstName VARCHAR2(50),
@@ -28,38 +28,47 @@ CREATE TABLE Customers (
     Email VARCHAR2(100),
     Phone VARCHAR2(15)
 );
-
+```
 2. Inserting Data:
 Data was inserted into all the tables using the INSERT INTO command. Below is an example of data insertion into the Customers table:
 
 -- Inserting data into Customers table
+```sql
 INSERT INTO Customers (CustomerID, FirstName, LastName, Email, Phone) VALUES 
 (1, 'kevin', 'nshuti', 'nshutikevin@gmail.com', '0788956407');
 
 INSERT INTO Customers (CustomerID, FirstName, LastName, Email, Phone) VALUES 
 (2, 'fabrice', 'mucyo', 'mutabazi@gmail.com', '0783123333');
 
+```
+
 3. Querying the Database:
 SQL queries were used to retrieve information, such as customer orders and details about products. A basic JOIN query to retrieve customer orders:
 
 -- Retrieving customer orders
+
+```sql
 SELECT c.FirstName, c.LastName, o.OrderID, o.OrderDate, o.TotalAmount
 FROM Customers c
 JOIN Orders o ON c.CustomerID = o.CustomerID;
+```
 
 4. Updating Data:
 Data in the tables was modified using the UPDATE command, such as updating a customer’s email address:
 
 -- Updating a customer's email
+```sql
 UPDATE Customers
 SET Email = 'nshkev808@gmail.com'
 WHERE CustomerID = 1;
+```
 
 5. Deleting Data:
 Data was deleted using the DELETE command. For example, deleting an order:
 
 -- Deleting an order
+```sql
 DELETE FROM Orders
 WHERE OrderID = 102;
 
-
+```
