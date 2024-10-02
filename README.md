@@ -22,7 +22,7 @@ ProductSuppliers Table: Manages the many-to-many relationship between products a
 
 Example SQL for Creating the Customers Table:
 
-```sql```
+```sql
 CREATE TABLE Customers (
     CustomerID NUMBER PRIMARY KEY,
     FirstName VARCHAR2(50),
@@ -51,10 +51,12 @@ SQL queries were used to retrieve information, such as customer orders and detai
 
 -- Retrieving customer orders
 
-```sql
+```sql```   
+
 SELECT c.FirstName, c.LastName, o.OrderID, o.OrderDate, o.TotalAmount
 FROM Customers c
 JOIN Orders o ON c.CustomerID = o.CustomerID;
+
 ```
 
 4. Updating Data:
