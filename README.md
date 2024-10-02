@@ -51,7 +51,7 @@ SQL queries were used to retrieve information, such as customer orders and detai
 
 -- Retrieving customer orders
 
-```sql```   
+```sql  
 
 SELECT c.FirstName, c.LastName, o.OrderID, o.OrderDate, o.TotalAmount
 FROM Customers c
