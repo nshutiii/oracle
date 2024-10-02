@@ -11,6 +11,7 @@ The database enables easy querying for order management, inventory control, and 
 
 SQL Commands Executed
 1. Table Creation:
+
 Customers Table: Stores customer details like name, email, and phone number.
 Orders Table: Stores order information with a reference to the Customers table via a foreign key.
 Products Table: Stores product details such as name, price, and category.
@@ -20,7 +21,11 @@ ProductSuppliers Table: Manages the many-to-many relationship between products a
 
 
 Example SQL for Creating the Customers Table:
+<<<<<<< HEAD
 ```sql
+=======
+```sql```
+>>>>>>> 103d166a35502ce33b83e93a5dbd3e800c8a71f5
 CREATE TABLE Customers (
     CustomerID NUMBER PRIMARY KEY,
     FirstName VARCHAR2(50),
@@ -28,7 +33,11 @@ CREATE TABLE Customers (
     Email VARCHAR2(100),
     Phone VARCHAR2(15)
 );
+<<<<<<< HEAD
 ```
+=======
+   ```sql```
+>>>>>>> 103d166a35502ce33b83e93a5dbd3e800c8a71f5
 2. Inserting Data:
 Data was inserted into all the tables using the INSERT INTO command. Below is an example of data insertion into the Customers table:
 
