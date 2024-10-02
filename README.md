@@ -33,11 +33,8 @@ CREATE TABLE Customers (
     Email VARCHAR2(100),
     Phone VARCHAR2(15)
 );
-<<<<<<< HEAD
+
 ```
-=======
-   ```sql```
->>>>>>> 103d166a35502ce33b83e93a5dbd3e800c8a71f5
 2. Inserting Data:
 Data was inserted into all the tables using the INSERT INTO command. Below is an example of data insertion into the Customers table:
 
