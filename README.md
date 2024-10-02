@@ -76,6 +76,7 @@ WHERE CustomerID = 1;
 Data was deleted using the DELETE command. For example, deleting an order:
 
 -- Deleting an order
+
 ```sql
 DELETE FROM Orders
 WHERE OrderID = 102;
