@@ -112,6 +112,11 @@ SELECT c.FirstName, c.LastName, o.OrderID, o.OrderDate, o.TotalAmount
 FROM Customers c
 JOIN Orders o ON c.CustomerID = o.CustomerID;
 
+--Outer join
+SELECT c.FirstName, c.LastName, o.OrderID, o.OrderDate, o.TotalAmount
+FROM Customers c
+LEFT JOIN Orders o ON c.CustomerID = o.CustomerID;
+
 -- Updating a customer's email
 UPDATE Customers
 SET Email = 'nshkev808@gmail.com'
@@ -121,9 +126,7 @@ WHERE CustomerID = 1;
 DELETE FROM Orders
 WHERE OrderID = 102;
 -- checking if row was inserted and deleted
-select * from suppliers;
-
-select * from productsuppliers;
+select * from categories;
 
 
 
